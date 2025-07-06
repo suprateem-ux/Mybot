@@ -141,7 +141,8 @@ resign:
 challenge:
   concurrency: 1
   bullet_with_increment_only: false   
-# min_initial: 60
+  min_initial: 120
+  max_increment: 0
   variants:
     - standard
     - chess960
@@ -196,8 +197,8 @@ messages:
   goodbye_spectators: "Thanks For watching!"
 
 whitelist:
-  - Realboy9000 
-  - Exogenetic-Bot 
+  - Supratsa
+  - VEERSAMRATSINGH
 
 books:
   Torma: "./engines/Torma.bin"
