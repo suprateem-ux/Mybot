@@ -156,11 +156,11 @@ challenge:
   # - rapid
   # - classical
   bot_modes:
-    - casual
-  # - rated
+  #  - casual
+    - rated
   human_modes:
     - casual
-    - rated
+  #  - rated
 
 matchmaking:
   delay: 10
@@ -190,7 +190,7 @@ matchmaking:
       variant: chess960
 
 messages:
-  greeting: "Humpo Dumpo! I am {me} made by Realboy9000.Looking forward to start,good luck."
+  greeting: "Humpo Dumpo! I am {me} made by Supratsa.Looking forward to start,good luck."
   goodbye: "Good game!How about a rematch?"
   greeting_spectators: "Hey, I'm running on {engine} .Type !help for a list of commands."
   goodbye_spectators: "Thanks For watching!"
