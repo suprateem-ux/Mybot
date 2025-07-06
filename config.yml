@@ -167,22 +167,22 @@ matchmaking:
   timeout: 30
   selection: cyclic
   types:
-    bullet:
-      tc: 30+0
+   # bullet:
+      #tc: 30+
     bulle2:
       tc: 3+0
-    bc:
-      tc: 5+0
+   # bc:
+     # tc: 5+0
     bm3:
       tc: 1+0
     gulugulu:
       tc: 0+1
-    guliguli:
-      tc: 10+0
+ #   guliguli:
+     # tc: 10+0
     hvj:
       tc: 1.5+0
-    win:
-      tc: 8+0
+  #  win:
+   #   tc: 8+0
     loss:
       tc: 2+0
     drum:
