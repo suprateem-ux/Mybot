@@ -53,7 +53,7 @@ jobs:
       - name: Run Bot
         run: |
           echo "Starting bot..."
-          python3 -u user_interface.py "create 3 maggichess16 0.5+0 rated" "matchmaking" &
+          python3 -u user_interface.py "create 3 maggichess16 0.5+0 rated" "matchmaking" "tournament AZAMgu8c indicheck-_hu" &
           PID=$!
           
           # Auto-exit after 350 minutes (so restart runs without overlap)
