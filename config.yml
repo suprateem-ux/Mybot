@@ -142,9 +142,9 @@ resign:
 challenge:
   concurrency: 1
   bullet_with_increment_only: false   
-  min_initial: 120
-  max_increment: 0
-  max_initial: 120
+  #min_initial: 0
+  max_increment: 3
+  #max_initial: 12000
   variants:
     - standard
     - chess960
