@@ -6,11 +6,11 @@ engines:
     name: "stockfish"
     ponder: true
     silence_stderr: false
-    move_overhead_multiplier: 10.0
+    move_overhead_multiplier: 2.0
     uci_options:
       Threads: 4
-      Hash: 4096
-      Move Overhead: 165
+      Hash: 2048
+      Move Overhead: 250
     limits:
       # time: 20.0
       # depth: 50
@@ -154,7 +154,7 @@ challenge:
     - racingKings
     - threeCheck
   time_controls:
-    #- bullet
+    - bullet
     - blitz
     - rapid
   # - classical
@@ -170,22 +170,22 @@ matchmaking:
   timeout: 30
   selection: cyclic
   types:
-   # bullet:
-      #tc: 30+
-    #bulle2:
-      #tc: 3+0
+    bullet:
+      tc: 0.5+0
+    bulle2:
+      tc: 3+0
    # bc:
      # tc: 5+0
     bm3:
       tc: 8+0
     gulugulu:
-      tc: 3+0
+      tc: 1+0
  #   guliguli:
      # tc: 10+0
     hvj:
       tc: 5+0
-  #  win:
-   #   tc: 8+0
+    win:
+      tc: 0.75+0
     loss:
       tc: 10+0
     drum:
@@ -193,7 +193,7 @@ matchmaking:
       variant: chess960
 
 messages:
-  greeting: "Humpo Dumpo! I am {me} made by Supratsa.Looking forward to start,good luck."
+  greeting: "Humpo Dumpo! I am {me} made by Supratsa.Owned by VEERSAMRATSINGH.Looking forward to start,good luck."
   goodbye: "Good game!How about a rematch?"
   greeting_spectators: "Hey, I'm running on {engine} .Type !help for a list of commands."
   goodbye_spectators: "Thanks For watching!"
