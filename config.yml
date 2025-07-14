@@ -8,7 +8,7 @@ engines:
     silence_stderr: false
     move_overhead_multiplier: 2.0
     uci_options:
-      Threads: 4
+      Threads: 3
       Hash: 2048
       Move Overhead: 250
     limits:
