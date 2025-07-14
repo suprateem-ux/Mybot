@@ -9,7 +9,7 @@ engines:
     move_overhead_multiplier: 2.0
     uci_options:
       Threads: 3
-      Hash: 2048
+      Hash: 2012
       Move Overhead: 250
     limits:
       # time: 20.0
