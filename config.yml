@@ -201,6 +201,8 @@ messages:
 whitelist:
   - Supratsa
   - VEERSAMRATSINGH
+blacklist: 
+  - Nimisilubot
 
 books:
   Torma: "./engines/Torma.bin"
