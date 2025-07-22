@@ -159,11 +159,12 @@ challenge:
     - rapid
   # - classical
   bot_modes:
-  #  - casual
+    - casual
     - rated
   human_modes:
     - casual
-  #  - rated
+    - rated
+  casual_variants_only: true          # Only accept casual challenges for variants
 
 matchmaking:
   delay: 10
