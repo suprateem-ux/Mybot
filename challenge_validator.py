@@ -30,6 +30,11 @@ class Challenge_Validator:
             print(f'Variant "{variant}" is not allowed according to config.')
             return Decline_Reason.VARIANT
 
+        is_rated: bool = challenge_event['rated']
+        if is_rated and self.config.challenge.casual_variants_only and variant != 'standard':
+            print(f'Rated challenges are only allowed for standard variant according to config.')
+            return Decline_Reason.CASUAL
+
         if (len(self.game_manager.tournaments) +
                 len(self.game_manager.tournaments_to_join)) >= self.config.challenge.concurrency:
             print('Concurrency exhausted due to tournaments.')
@@ -101,6 +106,6 @@ class Challenge_Validator:
         for speed in speeds:
             if '+' in speed:
                 initial_str, increment_str = speed.split('+')
-                time_controls.append((int(float(initial_str) * 60), int(increment_str)))
+                time_controls.append((int(initial_str) * 60, int(increment_str)))
 
         return time_controls
